@@ -41,3 +41,8 @@ test('does not remove data-test-id inside a string', () => {
   source = 'const b = \'<div data-test-id="test-id"></div>\';';
   expect(transform(source)).toBe(source);
 });
+
+test('removes data-testid pattern', () => {
+  const source = '<div><span data-testid="test-el">nested</span></div>;';
+  expect(transform(source)).toBe('<div><span>nested</span></div>;');
+});
