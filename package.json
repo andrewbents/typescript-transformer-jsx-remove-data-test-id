@@ -1,6 +1,6 @@
 {
   "name": "typescript-transformer-jsx-remove-data-test-id",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Typescript transformer to strip data-test-id jsx attributes",
   "main": "dist/transformer.js",
   "typings": "dist/transformer.d.ts",
