@@ -6,7 +6,7 @@ export function removeDataTestIdTransformer<
   return context => {
     const visit: ts.Visitor = node => {
       if (ts.isJsxAttribute(node)) {
-        if (node.name.getText() === 'data-test-id' || node.name.getText() === 'data-testid') {
+        if (node.name.getText() === 'data-test-id' || node.name.getText() === 'data-testid' || node.name.getText() === 'datatest-id') {
           return undefined;
         }
       }
